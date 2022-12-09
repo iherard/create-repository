@@ -1,0 +1,184 @@
+print("Name - Isaiah Herard")
+print("Program Descripition: Basic puzzle game")
+print("https://stackoverflow.com/questions/40792830/yes-or-no-output-in-python")
+print("https://iqcode.com/code/python/how-to-ask-a-yes-or-no-question-on-python#:~:text=how%20to%20ask%20a%20yes%20or%20no%20question,that.%20else%3A%20print%20%28%22Please%20enter%20yes%20or%20no.%22%29")
+print("https://www.w3schools.com/python/gloss_python_if_or.asp")
+print("https://www.hackerrank.com/contests/1500f22/challenges/3-booleans")
+print("https://forgetcode.com/c/977-exit-terminate-the-program#:~:text=The%20exit()%20function%20is,void%20exit(int%20return_code)%3B")
+print("\n\n\n\n\n\n\n")
+print(("Welcome to Power Frenzy"))
+print("\nType one to continue\n For unused programming/extra one of the following: S.E, M.S.C, A.S.C, Range, Not, Or.")
+print("P.S commands are case sensitive so, they everythin exactly what it says:")
+# Input lets the user put in what response they want to put in
+# If Help put certain inputs lead to a certain output. Source:yes or no output, stackoverflow and igcode
+answer = input()
+if answer == 'one':
+    print("Lets start with a tutorial")
+    print("Tutorial \nWithin this game, you need to pick the right weapons or powerups to continue.")
+    print("Here is which weapon can break what obstacle:\nDrill-Swirling Wall\nGaunlets-Metal Wall\nSwords-Metal Polls")
+    print("Practice one \nNow As you are walking foward there is a swirling wall\n Select thy weapon:")
+    print("a.Drill\nb.GAUNTLET\nc.sword")
+# elif mean else if meaning that if user puts a different certain input will lead them to another output
+# Also a string is used here
+# S.E-String Example
+# basically gives out the basic function of calculating numbers, the % put the remainder and the  exponents(**).
+# N.O.E-Numeric Operators Examples
+elif answer == 'N.O.E':
+    print("5*5=", 5 * 5, sep='')
+    print("5-5=", 5 - 5, sep='')
+    print("5/5=", 5 / 5, sep='')
+    print("5+5=", 5 + 5, sep='')
+    print("5**5=", 5 ** 5, sep='')
+    print("5%2=", 5 % 2, sep='')
+    print("Restart the program")
+# use as a string to add or multiply numbers/M.S.C-Multipling string calculation/user can enter a number
+elif answer == 'M.S.C':
+    print("num1=")
+    num1 = int(input())
+    print("num2=")
+    num2 = int(input())
+    totalMult = int(num1 * num2)
+    print("num1*num2=", totalMult)
+    print("type Quit and start the program again")
+elif answer == "Quit":
+    exit()
+# add the two numbers that you type in to add up the total/ user can enter in numbers
+elif answer == 'A.S.C':
+    print("num1=")
+    num1 = int(input())
+    print("num2=")
+    num2 = int(input())
+    totalAdd = int(num1 + num2)
+    print("num1+num2=", totalAdd)
+    print("Restart the program")
+    print("type Quit and start the program again")
+    if answer == "Quit":
+        exit()
+# Basically determines the range of the function and see if it is within it.  But in this case, less or Big
+elif answer == "Range":
+    number = int(input("Type a number that is less than or more than 5"))
+    if number < 5:
+        print("Less")
+    elif number <= 5:
+        print("type Quit and start the program again")
+        if answer == "Quit":
+            exit()
+    else:
+        print("Big")
+# Either answer is correct
+elif answer == "Or":
+    x = int(input("Enter Numbers"))
+    y = int(input("Enter Numbers"))
+    if x < y or y < x:
+        print("Correct")
+        print("start the program again")
+# Not function basically makes the results is reverse
+elif answer == "Not":
+    if answer == "Quit":
+        print(2 < 1)
+        number = 2
+        print(not (number > 1))
+        print("start the program again")
+elif answer == "and":
+    weight = float(input("Enter weight "))
+    cost = float(input("Enter cost "))
+    print((weight < 10) and (cost <= 20))
+answer = input()
+if answer == "Quit":
+    print("GAME OVER")
+    exit()
+answer = input()
+if answer == "a":
+    # "PO" * 3 prints po three times
+    print("PO" * 3, "OOOOOWER DRILLLLLLLL ACTIVATED", sep='')
+    print("zzRTTTTTTTTTTTT!")
+    print("YOU HAVE MADE THROUGH LEVEL ONE")
+    print("Practice two: \nThere is a metal wall in your way:\nSelect thy weapon:\na.Drill\nb.GAUNTLET\nc.sword")
+else:
+    print("Life Bar:", 3 - 1, "\noh sorry, forgot to mention, you get three lives in this game.You can regain a life")
+    print("back if You answer the next one correctly. Now, lets see if you survive the next obstacle")
+    print("Practice two: \nThere is a metal wall in your way:\nSelect thy weapon:\na.Drill\nb.GAUNTLET\nc.sword")
+answer = input()
+if answer == "b":
+    print("Life Bar:3")
+    print("DRAGON GAUNLETS ENGAGED \nROOOOOAAAAAAAAAAAAAARRRRRRRRRRRR POW POW")
+    print(
+        "The last challenge, Metal Polls blocks the way, and since this the last challenge,wrong answer is instant death")
+else:
+    print("Life bar:", 2 - 1, "\n thats ok, lets try the next question")
+    print(
+        "The last challenge, Metal Polls blocks the way, and since this the last challenge,wrong answer is instant death")
+    print("\nSelect thy weapon:")
+    print("a.Drill\nb.GAUNTLET\nc.sword")
+answer = input()
+if answer == "c":
+    print("Life Bar:3")
+    print("DIAMOND UNBREAKABLE SWORD \nSHING.  Press enter for Level 2")
+    print("Are u ready for the challenge, if yes type Ready, for exiting the game type Quit")
+else:
+    print("Life bar:", 1 - 1, "\nGAME OVER\nTo try again, restart the program")
+    exit()
+answer = input()
+if answer == 'Ready':
+    print("Great lets get this adventure started. \n*Awesome music opening*")
+    print(
+        "Chapter One:\n Earth, population full of human being.  Each one have their own regular skills and abilities.")
+    print("They tend to also learn how to grow, they are all the same, although, in this story.")
+    print("Press Enter to continue")
+elif answer == "Quit":
+    exit()
+enter = input()
+if enter == input():
+    print("\n\n\nOne individual is somebody special.\n *a bedroom with a gaming pc and stuff.*"
+          "\nAlarm Clock: *Radioactive by Imagine dragon plays*")
+enterTwo = input("Press Enter to continue")
+if enterTwo == input():
+    print("\n???:*YAWN* Geez morning already.  It feels like I just got in bed")
+enterThree = input("Press Enter twice to continue")
+if enterThree == input():
+    print("???: What time is it anyway, I better get going for my name isn't")
+name = input("Type name then enter twice: ")
+print(name + ":", name)
+enterFour = input("Press Enter to continue")
+if enterFour == input():
+    print(name + ":So I better get going to school.  But I should get ready first.  However, I am hungry.")
+    print("Press Enter to continue")
+playerinput = input()
+rightInput = False
+while rightInput == False:
+    try:
+        playerinput = int(input("What should I do first: \n 1. Eat Breakfast \n2.Go take a shower"))
+        rightInput == True
+        if playerinput == 1:
+            print("I should eat breakfast first")
+            print("*You walk into the kitchen* \n Okay I better go grab some cereal and... What the?")
+            enterFive = input("Press Enter to continue")
+            if enterFive == input():
+                print("As you try to grab the cereal, u say something shing within the box")
+            break
+        elif playerinput == 2:
+            print("Sure why not\n you took a shower and then went off to eat some cereal")
+            print("As you try to grab the cereal, u see something shing within the box")
+            break
+    except ValueError:
+        print("Um, okay mind time to wake up now")
+enterSix = input("Press Enter to continue")
+if enterSix == input():
+    print(name + ": Hm, that awesome.  I should leave it here, but I could show to my friend.")
+    print("Press Enter")
+playerinput = input()
+rightInput = False
+while rightInput == False:
+    try:
+        playerinput = int(input("What should I do? \n 1. leave it  \n2.Go take a shower \n"))
+        rightInput == True
+        if playerinput == 1:
+            print("Leaving it might be the best idea")
+            print("New route have been activated")
+            break
+        elif playerinput == 2:
+            print("I guess it never hurt to bring it with me.")
+            break
+    except ValueError:
+        print("Dang my head feels like a brick wall right now, like someone does not know what they are doing.")
+print("Power Frenzy, Story Mode coming soon")
